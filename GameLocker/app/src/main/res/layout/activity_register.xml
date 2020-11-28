@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter username"
+        android:id="@+id/uname"
+        android:background="@drawable/shape"
+        android:textSize="15dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        >
+
+        <Button
+            android:id="@+id/createPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/black"
+            android:onClick="Redirect"
+            android:text="Enter Password"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/black"
+            android:onClick="check"
+            android:text="Register"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/lock" />
+
+
+</LinearLayout>
